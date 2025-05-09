@@ -40,4 +40,20 @@ body {
   .hidden {
     display: none;
   }
+
+  #resetStreak {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#resetStreak:hover {
+  background-color: #c0392b;
+}
+
   

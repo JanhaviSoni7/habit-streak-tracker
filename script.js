@@ -46,6 +46,19 @@ markDoneBtn.onclick = () => {
     markDoneBtn.disabled = true;
     markDoneBtn.textContent = "Already marked today!";
   }
+}
+const resetStreakBtn = document.getElementById('resetStreak');
+
+resetStreakBtn.onclick = () => {
+  if (confirm("Are you sure you want to reset your streak?")) {
+    localStorage.setItem('streak', '0');
+    localStorage.removeItem('lastDate');
+    streakDisplay.textContent = '0';
+    markDoneBtn.disabled = false;
+    markDoneBtn.textContent = "Mark Today as Done";
+  }
 };
+
+
 
 window.onload = loadHabit;
