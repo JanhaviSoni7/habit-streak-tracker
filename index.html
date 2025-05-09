@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Streak Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Habit Streak Tracker</h1>
+    <input type="text" id="habitInput" placeholder="Enter your habit..." />
+    <button id="saveHabit">Save Habit</button>
+    
+    <div id="habitSection" class="hidden">
+      <h2 id="habitName"></h2>
+      <p>Current Streak: <span id="streak">0</span> days</p>
+      <button id="markDone">Mark Today as Done</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
